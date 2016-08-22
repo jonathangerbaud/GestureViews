@@ -427,10 +427,10 @@ public class GestureController implements View.OnTouchListener {
 
         if (isScrollDetected) {
             // Only scrolling if we are not zoomed less than min zoom
-            if (State.compare(state.getZoom(), stateController.getEffectiveMinZoom()) >= 0) {
+//            if (State.compare(state.getZoom(), stateController.getEffectiveMinZoom()) >= 0) {
                 state.translateBy(-dx, -dy);
                 isStateChangedDuringTouch = true;
-            }
+//            }
         }
 
         return isScrollDetected;
